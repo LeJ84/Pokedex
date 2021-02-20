@@ -1,0 +1,41 @@
+.top{
+  display: flex;
+  justify-content: space-between;
+  color: #c14040;
+  font-family: 'Bree Serif', serif;
+  margin : 1rem auto 1rem auto;
+  width:97%;
+  background-color: #efe3e3;
+  padding: 1rem;
+  border-radius: 1.5rem;
+
+  .title{
+    font-size: 1.8rem;
+  }
+
+  .menu{
+    font-size: 1.2rem;
+    list-style-type: none;
+    display: flex;
+    &-item{
+      margin:0.5rem;
+      &-link{
+        text-decoration: none;
+        color: #c14040;
+      }
+      
+      &-link:hover{
+        text-decoration: none;
+        color:#982c2c;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+.type_list{
+    display:flex;
+    //grid:100px / auto-flow;
+    width:100%;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.type{
+    width:7vw;
+    padding:1rem;
+    border-radius:0.5rem;
+    margin:0.5rem;
+    text-align: center;
+    color:white;
+    font-size:1.2rem;
+    display: inline-block;
+    min-width:100px;
+}
+
+.type-link{
+    text-decoration:none;
+    color:inherit;
+}
