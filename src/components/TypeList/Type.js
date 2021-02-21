@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
+
 import './style.scss';
 import style from '../../data';
 
@@ -20,7 +22,7 @@ const Type = ( {url, index} ) => {
     if (!type) return (<p>Loading</p>);
     return (
         <span className="type" style={style[index]}>
-            <a className="type-link" href={`/types/${type.id}`}>{type.name}</a>
+            <Link className="type-link" to={`/types/${type.id}`}>{type.name}</Link>
         </span>
     );
 };

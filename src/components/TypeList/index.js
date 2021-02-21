@@ -4,10 +4,16 @@ import axios from 'axios';
 import Type from './Type';
 import './style.scss';
 
+/**
+ * Component for the type list fetched from API
+ */
 const TypeList = () => {
 
     const [urlTypeList, setUrlTypeList] = useState([]);
 
+    /**
+     * Fetch the Urls' type in French 
+     */
     const fetchTypes = async () => {
         try {
             const response = await axios.get('https://pokeapi.co/api/v2/type/')
@@ -23,14 +29,20 @@ const TypeList = () => {
         }
     };
 
+    // At first render fetch from API
     useEffect(() => {
         fetchTypes();
     },[])
 
-    const jsxList = urlTypeList.map((url,index) => <Type key={url} url={url} index={index}/>)
+    // jsxList to display
+    const jsxList = urlTypeList.map(
+        (url,index) => <Type key={index} url={url} index={index}/>
+    );
 
+    // Basic Loader
     if (urlTypeList.length === 0) return (<div>Loading</div>);
 
+    // Render
     return (
         <div className="type_list">{jsxList}</div>
     );
