@@ -17,7 +17,7 @@ const PokemonName = ({ url }) => {
           const response = await axios.get(url);
           console.log('data pokcard',response.data);
           setPokemon({
-              name: response.data.names[4].name,
+              name: response.data.names.find(element => element.language.name === 'fr').name,
               id: response.data.id 
           });
       }

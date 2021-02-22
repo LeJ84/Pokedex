@@ -1,8 +1,9 @@
 .pokemon-list {
     width:100%;
-    display:flex;
-    justify-content: center;
+    display:grid;
+    /* justify-content: center;
     align-items: stretch;
     align-content:stretch;
-    flex-wrap:wrap;
+    flex-wrap:wrap; */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
