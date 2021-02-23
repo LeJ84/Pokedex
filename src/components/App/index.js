@@ -18,7 +18,6 @@ function Pokedex() {
         <Route path="/">
           <PokemonList />
         </Route>
-        
         {/* <Error /> */}
     </div>
   );

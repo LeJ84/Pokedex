@@ -1,13 +1,18 @@
-.pokemon-card{
+.pokemon-card {
     background-color:#982c2c;
     text-align: center;
     padding : 1rem;
     border-radius: 2.5rem;
     margin:1rem;
+  
+    &--detailed {
+        grid-column: 1/-1;
+        grid-row:1/span 2;
+    }
 }
 
 
-.pokemon-name{
+.pokemon-name {
     color:#f9ccb9;
     font-size:1.2rem;
 }

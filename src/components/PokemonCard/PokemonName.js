@@ -10,12 +10,12 @@ import './style.scss';
 const PokemonName = ({ url }) => {
 
     const [pokemon,setPokemon] = useState();
-  
+    
     const fetchPokemon = async () => {
-      console.log({url});
+      //console.log({url});
       try {
           const response = await axios.get(url);
-          console.log('data pokcard',response.data);
+          //console.log('data pokcard',response.data);
           setPokemon({
               name: response.data.names.find(element => element.language.name === 'fr').name,
               id: response.data.id 
