@@ -1,4 +1,4 @@
-# Pokédex
+# Pokédex (en cours)
 
 C'est un projet d'école que j'ai repris afin d'aborder d'autres aspects et pratiquer autrement.
 Ce projet etait à l'origine un projet en JS Vanilla avec une base de données PSQL.
